@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_span="2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Giải phương trình bậc 2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nhập a:"
+            android:background="#E8F5E9"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/editA"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nhập b:"
+            android:background="#E8F5E9"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/editB"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nhập c:"
+            android:background="#E8F5E9"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/editC"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:text="Tiếp tục" />
+        <Button
+            android:id="@+id/btnGiaiPT"
+            android:text="Giải PT" />
+        <Button
+            android:id="@+id/btnThoat"
+            android:text="Thoát" />
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtKQ"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:text=""/>
+    </TableRow>
+</TableLayout>
