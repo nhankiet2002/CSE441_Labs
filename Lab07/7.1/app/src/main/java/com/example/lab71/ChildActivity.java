@@ -7,18 +7,18 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class ChildActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_child);
 
-        Button btn1 = findViewById(R.id.btnToChild);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        Button btn = findViewById(R.id.btnBack);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this, ChildActivity.class);
+                Intent intent1 = new Intent(ChildActivity.this, MainActivity.class);
                 startActivity(intent1);
             }
         });

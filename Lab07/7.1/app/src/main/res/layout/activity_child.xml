@@ -3,20 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#008000"
+    android:background="#FFFF00"
     android:gravity="center">
 
     <TextView
-        android:id="@+id/tvMain"
+        android:id="@+id/tvChild"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is main Activity"
-        android:textColor="#FFFF00"
+        android:text="This is Child Activity"
+        android:textColor="#008000"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btnToChild"
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open Child Activity" />
+        android:text="Back to Main Activity" />
 </LinearLayout>
