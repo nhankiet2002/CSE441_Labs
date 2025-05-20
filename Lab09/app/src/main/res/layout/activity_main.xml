@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nhac"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background music"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/play"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:contentDescription="Play/Pause"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageButton
+            android:id="@+id/btnstop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/stop"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:contentDescription="Stop"/>
+    </LinearLayout>
+
+</RelativeLayout>
