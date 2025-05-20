@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/myimg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:contentDescription="Ảnh đã chụp"
+        android:src="@android:drawable/ic_menu_gallery" />
+    <!-- Bạn có thể thay android:src bằng một ảnh placeholder của bạn -->
+
+    <ImageButton
+        android:id="@+id/btncapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Chụp ảnh"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+    <!-- Bạn có thể thay app:srcCompat bằng một icon camera của bạn -->
+
+</LinearLayout>
