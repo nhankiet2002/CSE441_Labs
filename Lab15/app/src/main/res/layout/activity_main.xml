@@ -1,29 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ LỚP HỌC"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#03A9F4"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
 
-        <EditText android:id="@+id/edtmalop" android:hint="Mã lớp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/edttenlop" android:hint="Tên lớp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/edtsiso" android:hint="Sĩ số" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtmalop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã lớp (VD: K25EVT)"
+        android:inputType="textCapCharacters"
+        android:autofillHints="username" />
 
-        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-            <Button android:id="@+id/btninsert" android:text="Thêm" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
-            <Button android:id="@+id/btndelete" android:text="Xoá" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
-            <Button android:id="@+id/btnupdate" android:text="Cập nhật" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
-            <Button android:id="@+id/btnquery" android:text="Truy vấn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
-        </LinearLayout>
+    <EditText
+        android:id="@+id/edttenlop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên lớp (VD: KT Điện tử Viễn thông)"
+        android:inputType="textCapWords"
+        android:autofillHints="" />
 
-        <ListView android:id="@+id/lv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtsiso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sĩ số (VD: 45)"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btninsert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="INSERT"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:layout_marginStart="4dp"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnquery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="QUERY"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtmaso_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã số: 12345"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtbaihat_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bài hát: ABC"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtloibaihat_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lời bài hát: Lorum ipsum..."
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/txttacgia_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: XYZ"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu thích: "
+            android:textSize="16sp"/>
+        <ImageButton
+            android:id="@+id/btnthich_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Like" />
+        <ImageButton
+            android:id="@+id/btnkhongthich_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unlike"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone"
+            android:contentDescription="Unlike" />
+    </LinearLayout>
+</LinearLayout>
