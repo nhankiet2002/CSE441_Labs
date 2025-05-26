@@ -1,0 +1,22 @@
+{
+  "MaDM": "DM01",
+  "TenDM": "Hàng máy tính",
+  "Sanphams": [
+    {
+      "MaSP": "SP_001",
+      "TenSP": "DELL Inspiron 14NR",
+      "SoLuong": "100",
+      "DonGia": "150000",
+      "ThanhTien": "15000000",
+      "Hinh": "https://duythanhcse.wordpress.com/h1.png"
+    },
+    {
+      "MaSP": "SP_002", 
+      "TenSP": "HP Inspiron 113",
+      "SoLuong": "130",
+      "DonGia": "140000",
+      "ThanhTien": "18200000",
+      "Hinh": "https://duythanhcse.wordpress.com/h2.png"
+    }
+  ]
+}
