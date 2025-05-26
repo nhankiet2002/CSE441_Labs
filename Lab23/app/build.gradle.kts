@@ -1,14 +1,13 @@
 plugins {
     alias(libs.plugins.android.application)
-
 }
 
 android {
-    namespace = "com.example.lab22"
+    namespace = "com.example.webservice"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.lab22"
+        applicationId = "com.example.webservice"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -30,7 +29,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    useLibrary ("org.apache.http.legacy")
 }
 
 dependencies {
