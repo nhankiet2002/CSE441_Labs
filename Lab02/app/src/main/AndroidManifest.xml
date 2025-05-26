@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lab02">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Application"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- ✅ THÊM DÒNG NÀY -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Subactivity"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:exported="false" /> <!-- nên thêm rõ ràng, dù mặc định là false -->
+
+    </application>
+</manifest>
