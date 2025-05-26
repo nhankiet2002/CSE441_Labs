@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etMemberCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Hội Viên (MBRxxx)"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Hội Viên"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh (YYYY-MM-DD)"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etHometown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quê quán"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etResidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nơi ở"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etRatingSingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm đơn (vd: 1.25)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etRatingDouble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm đôi (vd: 1.10)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

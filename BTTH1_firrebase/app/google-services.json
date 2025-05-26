@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "565330810286",
+    "firebase_url": "https://btth1-ad5ef-default-rtdb.firebaseio.com",
+    "project_id": "btth1-ad5ef",
+    "storage_bucket": "btth1-ad5ef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565330810286:android:ede2bf0754bd06180ca43f",
+        "android_client_info": {
+          "package_name": "com.example.btth1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFDg0POiLdXgplCnOVTnNOlA25svRqDck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
