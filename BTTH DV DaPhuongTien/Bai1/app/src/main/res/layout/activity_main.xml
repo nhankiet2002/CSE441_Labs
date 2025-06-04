@@ -37,6 +37,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Trạng thái: Chưa ghi âm" />
+        <Button
+            android:id="@+id/btnSpeechToText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speech to Text"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
 
 
